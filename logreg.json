@@ -1,0 +1,28 @@
+{
+  "akuns": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "123",
+      "role": "admin"
+    },
+    {
+      "username": "nizar",
+      "password": "111",
+      "role": "user",
+      "id": 2
+    },
+    {
+      "username": "aaa",
+      "password": "aaa",
+      "role": "user",
+      "id": 3
+    },
+    {
+      "username": "nizar",
+      "password": "123",
+      "role": "user",
+      "id": 4
+    }
+  ]
+}
