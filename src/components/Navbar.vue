@@ -50,7 +50,7 @@ export default {
   name: "SideComp",
   computed :{
     adminAcces() {
-      return sessionStorage.getItem("role") === "admin";
+      return sessionStorage.getItem("role") === "admin" || "";
     }
   },
   methods: {

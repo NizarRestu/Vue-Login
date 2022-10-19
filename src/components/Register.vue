@@ -20,6 +20,13 @@
         class="form_login"
         placeholder="Masukan Password Anda"
       />
+      <label>Pilih Role Anda </label>
+      <select name="role" v-model="role">
+        <option value="user">User</option>
+        <option value="admin">Admin</option>
+      </select>
+      <br />
+      <br />
       <button class="btn btn-primary poll" type="submit">Register</button>
       <center>
         <p class="f00ter">
@@ -38,6 +45,7 @@ export default {
     return {
       username: "",
       password: "",
+      role: "",
     };
   },
   mounted() {
@@ -46,20 +54,20 @@ export default {
   methods: {
     // Menjalankan 2 fungsi menambahkan akun dabn memvalidasi setelah register 1
     async register(e) {
-        e.preventDefault();
+      e.preventDefault();
       const playload = {
         username: this.username,
         password: this.password,
-        role: "user",
+        role: this.role,
       };
-        const registrasi = await axios.post(
-          " http://localhost:3000/akuns",
-          playload
-        );
-        var convertToString = JSON.stringify(registrasi.data);
-        sessionStorage.setItem("USER_DATA", convertToString);
-        this.$emit("toggleBar");
-        this.$router.push("/")
+      const registrasi = await axios.post(
+        " http://localhost:3000/akuns",
+        playload
+      );
+      var convertToString = JSON.stringify(registrasi.data);
+      sessionStorage.setItem("USER_DATA", convertToString);
+      this.$emit("toggleBar");
+      this.$router.push("/");
     },
   },
 };

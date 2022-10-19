@@ -24,5 +24,46 @@
       "role": "user",
       "id": 4
     }
+  ],
+  "motors": [
+    {
+      "motor": "Genio",
+      "merk": "Honda",
+      "tahun": "2019",
+      "bahanbakar": "4,2 Liter",
+      "jenis": "110",
+      "image": "",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "motor": "Honda Monkey",
+      "merk": "Honda",
+      "tahun": "   2021",
+      "bahanbakar": "5,61 Liter",
+      "jenis": "125 CC",
+      "image": "",
+      "mobil": ""
+    },
+    {
+      "motor": "Yamaha YZF R1 M ",
+      "merk": "Yamaha",
+      "tahun": "2021",
+      "bahanbakar": "17 Liter",
+      "jenis": "998 CC",
+      "image": "",
+      "id": 6
+    }
+  ],
+  "mobils": [
+    {
+      "mobil": "Mitsubishi Xpander",
+      "merk": "Mitsubishi",
+      "tahun": 2017,
+      "bahanbakar": "Pertamax",
+      "jenis": "Mobil Keluarga",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdpUf9jGEjHHdPNnRPqt7-HGZetMM8xYXnaUo6i5jQ&s",
+      "id": 1
+    }
   ]
 }

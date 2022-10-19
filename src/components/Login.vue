@@ -42,7 +42,7 @@ export default {
       form: {
         username: "",
         password: "",
-        users: {},
+        role:"",
       },
     };
   },
@@ -100,7 +100,7 @@ label {
   margin: 80px auto;
   padding: 30px 20px;
   overflow: hidden;
-  height: 60vh;
+  /* height: 60vh; */
 }
 .form_login {
   /*membuat lebar form penuh*/
